@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYesil"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtSeraSogutmaSistemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sera Sogutma Sistemi"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeraSogutmaSistemi">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLinear"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Sera Id : 1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageViewSera1Alert"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/ic_warning_black_24dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtSera1GuncelSicaklik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Guncel Sicaklik : "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtSera1HedefSicaklik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hedef Sicaklik : "
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSera1HedefSicaklik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/txtSera1HedefSicaklikGuncelle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Hedef Guncelle : "
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/editTextSera1HedefSicaklik"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number|none" />
+
+                <Button
+                    android:id="@+id/btnSera1HedefSicaklikGuncelle"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Guncelle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorLinear"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Sera Id : 2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageViewSera2Alert"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/ic_warning_black_24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSera2GuncelSicaklik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Guncel Sicaklik : "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtSera2HedefSicaklik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hedef Sicaklik : "
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSera2HedefSicaklik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/txtSera2HedefSicaklikGuncelle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Hedef Guncelle : "
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/editTextSera2HedefSicaklik"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number|none" />
+
+                <Button
+                    android:id="@+id/btnSera2HedefSicaklikGuncelle"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Guncelle" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
